@@ -24,14 +24,20 @@
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+body {
+ filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1); /* IE */
 
-        body {
+ -webkit-filter: grayscale(1); /* Chrome, Safari */
+ filter: grayscale(1); /* Firefox */
+ }
+
+       /* body {
             background-color: #f9f9f9;
             color: #333;
             line-height: 1.6;
         }
 
-        /* Header */
+         Header */
         header {
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
